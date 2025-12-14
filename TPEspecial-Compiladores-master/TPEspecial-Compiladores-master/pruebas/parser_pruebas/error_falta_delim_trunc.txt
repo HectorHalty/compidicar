@@ -1,0 +1,9 @@
+TRUNCERROR{
+
+    Z:= B + F1 (trunc1.2->X);
+
+    Z:= B + F1(trunc(1.2->X);
+
+    Z:= B + F1(trunc1.2)->X);
+
+}

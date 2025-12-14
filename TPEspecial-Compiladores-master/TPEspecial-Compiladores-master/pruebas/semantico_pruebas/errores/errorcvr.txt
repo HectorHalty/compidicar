@@ -1,0 +1,16 @@
+MAIN{
+    uint F1 (uint A){
+        print(A);
+        A:=5UI;
+        uint B;
+        B =6UI;
+        return(B);
+    }
+    uint X, Y;
+    X = 3UI;
+    Y := F1(4UI -> A);
+    Y:= F1(Z -> A);
+    Y := F1(X -> C);
+    print(Y);
+    print(X);
+}

@@ -1,0 +1,4 @@
+MENOSELEMENTOS{
+
+    A, B, C, D = 1UI, 2UI;
+}

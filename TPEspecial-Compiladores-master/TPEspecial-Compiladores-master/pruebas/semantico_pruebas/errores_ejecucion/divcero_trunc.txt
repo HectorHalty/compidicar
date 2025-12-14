@@ -1,0 +1,28 @@
+TRUNCDIVCERO {
+    ## LINEA 24 DIVISION ENTRE DFLOAT CON CERO EN DENOMINADOR ##
+    uint BASE, EXP;
+    BASE = 2UI;
+    EXP = 3UI;
+
+    uint POTENCIA (cv uint BASE, cv uint EXPONENTE) {
+        uint CONTADOR, RES;
+        CONTADOR:= 1UI; 
+        RES:= 0UI;
+        if (BASE < EXPONENTE ){
+            print(BASE);
+            print(EXPONENTE);
+        }endif;
+        
+        do {
+            RES:= BASE * BASE + RES; 
+            CONTADOR := CONTADOR + 1UI;
+        } while ( CONTADOR < EXPONENTE);
+
+        return(RES);
+    }
+    uint POT;
+    POT:=POTENCIA(BASE->BASE, trunc(3.0 / 0.0)->EXPONENTE);
+
+    print(POT);
+    
+}

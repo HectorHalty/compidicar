@@ -1,0 +1,5 @@
+ASIGMULTIPLES {
+    uint A, B, C, I, K, J;
+    I, K = 23UI, 5UI;
+    A = 1UI;
+}

@@ -1,0 +1,22 @@
+MAIN{
+    uint F1 (uint A){
+        print(A);
+        A:=5UI;
+        uint B;
+        B =6UI;
+        uint F1 (uint B){
+            print(A);
+            A:=5UI;
+            uint C;
+            C =6UI;
+            return(B);
+        }
+        return(B);
+    }
+
+    uint X, Y;
+    X = 3UI;
+    Y := F1(X -> A);
+    print(Y);
+    print(X);
+}

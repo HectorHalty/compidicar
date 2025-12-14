@@ -1,0 +1,25 @@
+MAIN{
+    uint A, B, C, C;    ##redeclaracion##
+    uint A;
+
+    A, B, C = 1UI, 2UI, 3UI;
+
+    uint A (cv uint X){ ##redeclaracion con una funcion de variable##
+        return(X);
+    }
+
+    uint F1(cv uint X){
+        return(X);
+    }
+    B :=F1(C -> X);
+
+    uint F1(cv uint X){ ##redeclaracion de una funcion##
+        return(X);
+    }
+
+    uint F1;    ##redeclaracion de una funcion con una variable##
+
+    B :=F2(C -> X); ##funcion inexistente##
+
+    Z := A; ##variable inexistente##
+}

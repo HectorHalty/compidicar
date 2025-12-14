@@ -1,0 +1,26 @@
+PREFIJADO%OPCIONAL{
+    uint B;
+    B := 10UI;
+    uint AA(uint X){
+        uint A;
+
+        uint AAA(uint W){
+            uint X; 
+
+            X:= AA.A;
+
+            AAA.X := B;
+            print(B);
+
+            return(X);
+        }
+        AAA(A->W)
+        return(A);
+    }
+    AA(B->X)
+    uint BB(uint Z){
+        uint A, W;
+        return(A);
+    }
+    BB(B->Z)
+}

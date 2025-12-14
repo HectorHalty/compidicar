@@ -1,0 +1,30 @@
+PRUEBA%ABUSO%NOMBRES {
+    ## Prueba de IDs con '%' e IDs calificados. Debe funcionar la SintaxisS##
+    uint A%B%C, D;
+    
+    A%B%C := 1UI;
+    D := 2UI;
+
+    ##A%B%C.D es un id_calificado valido ##
+    A%B%C.D := 3UI; 
+    
+    print("Arrancando anidamiento");
+
+    if (A%B%C < D) {
+        print("Nivel 1");
+        if (D == 2UI) {
+            print("Nivel 2");
+            if (A%B%C.D =! A%B%C) {
+                print("If en Nivel 3");
+            } else {
+                print("Else en Nivel 3");
+            } endif;
+        } else {
+            print("Else en Nivel 2");
+        } endif;
+    } else {
+        print("Else en Nivel 1");
+    } endif;
+    
+    print("Prueba de anidamiento finalizada.");
+}

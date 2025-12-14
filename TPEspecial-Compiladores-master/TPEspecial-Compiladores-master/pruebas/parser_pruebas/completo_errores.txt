@@ -1,0 +1,34 @@
+PRUEBA%SINTAXIS {
+    
+    uint A, B C;  ## Error: Falta coma entre B y C ##
+
+    print("Iniciando prueba de errores") ## Error: Falta ; ##
+
+    A :=10ui
+    B := 5ui
+
+    ## Error: Falta ( en la condicion ##
+    if A > 20UI ) {
+        print("A es mayor");
+    } endif;
+
+    ## Error: Falta ) en la condicion ##
+    if (A < 20UI {
+        print("A es menor que 20");
+    } endif;
+    
+    C := A + * B; ## Error: Operadores consecutivos ##
+
+    ## Error: Falta ENDIF ##
+    if (C > 1UI) {
+        A := 1UI;
+    };
+
+    ## Error: Falta ; ##
+    do {
+        C := C + 1UI
+    } while (C < 100UI)
+
+    print("Fin");
+    
+}

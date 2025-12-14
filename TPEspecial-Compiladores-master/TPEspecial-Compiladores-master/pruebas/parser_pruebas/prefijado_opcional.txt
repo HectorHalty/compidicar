@@ -1,0 +1,36 @@
+PREFIJADO{
+
+    print("Asignacion a una variable con prefijo.");
+    F1.A = 5UI;
+    F2.B := 10UI;
+
+    print("Uso en condiciones de sentencias if.");
+    if (F1.A > 10UI) {
+        print("F1.A es mayor a 10");
+    } endif;
+
+    if (F1.A == F2.B) {
+        A = 1UI;
+    } else {
+        B = 2UI;
+    } endif;
+
+    print("Uso en condiciones de sentencias do-while.");
+    do {
+        A = 1UI + 1UI;
+    } while (A < F1.C);
+
+    print("6. Uso en sentencias print.");
+    print(F1.A);
+    print(F1.B + F2.C);
+
+    print("Uso como argumento en una invocacion de funcion.");
+    FUNCION(F1.A -> P1, (F2.B + 5UI) -> P2)
+
+
+    print("Uso en asignacion multiple.");
+    A.B, C.D = 1UI, 2UI; 
+
+    print("Uso en funciones Lambda (como argumento).");
+    (uint PARAM) {PARAM = 7UI + 1UI;} (F1.A)
+}

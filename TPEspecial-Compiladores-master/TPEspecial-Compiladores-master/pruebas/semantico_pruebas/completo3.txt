@@ -1,0 +1,30 @@
+MAIN{
+    ## Contiene if, while, funcion , trunc, lambda, print ##
+    uint A, B, C, D, E, F;
+    A = 21UI;
+    B = 67UI, 10UI, 11UI;
+
+    uint SUMA (uint VAR1, cv uint VAR2) {
+        uint LOCAL1, LOCAL2;
+        uint FUNCION2 (uint X){
+            F := 5UI;
+            SUMA.LOCAL1 := F;
+            print(F);
+            X:= A;
+            if (X == 21UI)
+                return(X);
+            else
+                return(F);
+            endif;
+        }
+        E := FUNCION2(LOCAL1 -> X);
+        return(E);
+    }
+    uint VAR%FUNC;
+    VAR%FUNC:=SUMA(trunc(3.0)->VAR2, B -> VAR1);
+
+    print(VAR%FUNC);
+    ##vemos ademas el funcionamiento de lambda ##
+    F:= 3UI;
+    (uint G){print(G); G:=B; print(G);}(1UI)
+}

@@ -1,0 +1,6 @@
+    MAIN{
+        uint J;
+        ##warning por tener mas expresiones que constantes.##
+        ##se ve que no se impide la ejecucion##
+        J = 20UI, 21UI;
+    }

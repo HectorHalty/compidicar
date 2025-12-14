@@ -1,0 +1,27 @@
+PRUEBA%MINIMALISTA {
+    ##Programa valido, donde hay sentencias vacias ##
+    
+    ## Un IF vacio ##
+    if (1UI == 1uUI) {
+        ## Bloque 'entonces' vacio ##
+    } else {
+        ## Bloque 'sino' vacio ##
+    } endif;
+
+    ## Un DO-WHILE vacio ##
+    do {
+        ## Cuerpo del bucle vacio ##
+    } while (1UI > 2UI);
+    
+    ## Una funcion que no hace nada y no tiene cuerpo ##
+    ## falla porque 'final_funcion' es obligatorio. ##
+    uint NADA() {}  ## Error de sintaxis. Si esta linea esta completamente comentada, debiese compilar todo el analisis sintactico.
+                        Se prueba en 'sentencias_vacias1.5.txt' ##
+    
+    ## Una funcion que solo retorna ##
+    uint NADA%UTIL() {
+        return (0UI);
+    }
+    
+    print("Terminado.");
+}

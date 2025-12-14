@@ -1,0 +1,10 @@
+DIVISIONXCERO{
+    ## Division por cero##
+    
+    uint NUM,DEN,RES;
+    NUM:= 5UI;
+    DEN:= 0UI;
+    RES:= NUM / DEN;
+
+    print(RES);
+}

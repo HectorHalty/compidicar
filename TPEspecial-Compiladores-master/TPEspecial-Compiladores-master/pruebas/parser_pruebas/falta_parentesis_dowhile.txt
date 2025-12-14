@@ -1,0 +1,14 @@
+DOWHILE {
+    uint X, Z;
+    X = 2UI;
+    Z := 100UI;
+    ## Faltan ambos parentesis##
+    do{ X:= Z;} while X < Z ;
+
+    ## Falta el izquierdo ##
+    do{ X:= Z;} while X < Z) ;
+
+    ##Falta el derecho##
+    do{ X:= Z;} while (X < Z ;
+    
+}

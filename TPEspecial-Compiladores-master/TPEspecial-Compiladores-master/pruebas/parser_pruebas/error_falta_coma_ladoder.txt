@@ -1,0 +1,4 @@
+COMALADODER{
+    
+    A = 1UI 2UI 3UI;
+}

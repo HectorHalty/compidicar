@@ -1,0 +1,11 @@
+FUNC{
+    uint A;
+    uint X;
+    uint Z;
+    uint F1(uint A, uint B){
+        uint Z;
+        return (Z);
+    }
+    uint F1;
+    F1(trunc(2.0)->A, 20UI->B)
+}

@@ -1,0 +1,5 @@
+PROGRAMA {
+
+    print("Elegir que llave quitar para la prueba.");
+
+}

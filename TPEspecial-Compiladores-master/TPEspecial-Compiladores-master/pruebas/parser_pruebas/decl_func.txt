@@ -1,0 +1,8 @@
+PROGRAMA{
+
+    uint F(cv uint A, uint B) {
+        A:=B; 
+        return(A);
+    }
+    
+}

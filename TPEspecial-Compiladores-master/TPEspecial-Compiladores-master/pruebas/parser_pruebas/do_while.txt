@@ -1,0 +1,5 @@
+DOWHILE {
+    uint X,Z;
+    X,Z = 1UI, 2UI;
+    do{X:= 1UI + 2UI;} while (X < Z);
+}

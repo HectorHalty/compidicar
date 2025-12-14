@@ -1,0 +1,19 @@
+ELSE {
+    print("Falta cuerpo en then");
+    if (A < B)  
+    else
+        {B:= A;}
+    endif;
+
+    print("Falta cuerpo en else");
+    if (A < B) {B:= A;}
+    else
+        
+    endif;
+
+    print("Falta cuerpo en then y else");
+    if (A < B) 
+    else
+        
+    endif;
+}

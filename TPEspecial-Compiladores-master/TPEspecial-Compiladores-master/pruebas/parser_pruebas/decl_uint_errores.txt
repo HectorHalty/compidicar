@@ -1,0 +1,7 @@
+PROGRAMA {
+
+  uint A, B, C
+
+  uint A B C; 
+  
+}

@@ -1,0 +1,4 @@
+OVERFLOW {
+    uint A;
+    A:= 65535UI + 1UI;
+}

@@ -1,0 +1,4 @@
+COMALADOIZQ{
+
+    A B C = 1UI, 2UI, 3UI;
+}

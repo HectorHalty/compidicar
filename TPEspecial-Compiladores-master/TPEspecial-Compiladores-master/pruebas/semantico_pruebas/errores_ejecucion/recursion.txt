@@ -1,0 +1,13 @@
+RECURSION{
+    ## DEBEMOS EVITAR LA RECURSION ##
+    uint A;
+    A:=2UI;
+
+    uint F(cv uint X){
+
+        F(X + 1UI->X)
+        return(X);
+    }
+
+    F(A->X)
+}

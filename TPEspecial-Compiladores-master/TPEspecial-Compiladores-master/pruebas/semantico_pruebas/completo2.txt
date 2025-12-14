@@ -1,0 +1,39 @@
+MAIN{
+    ## Contiene if, while, funcion , trunc, lambda, print ##
+    uint A, B, C, D, E, F;
+    A := 21UI;
+    B, C, D= 67UI, 10UI, 11UI;
+
+    uint FUNCION (uint VAR1, cv uint VAR2) {
+        uint LOCAL1, LOCAL2;
+        LOCAL2:= 1UI; 
+        LOCAL1:= 0UI;
+        if (VAR1 < VAR2 ){
+            print(VAR1);
+            VAR1 = 22UI;
+            return(VAR2);
+        }endif;
+        
+        do {
+            LOCAL2:= C + D + LOCAL2; 
+        } while ( LOCAL2 < 22UI);
+        uint FUNCION2 (uint X){
+            F := 5UI;
+            FUNCION.LOCAL1 := F;
+            print(F);
+            X:= A;
+            return(X);
+        }
+        E := FUNCION2(LOCAL1 -> X);
+        return(LOCAL2);
+    }
+    uint VAR%FUNC;
+    VAR%FUNC:=FUNCION(trunc(3.0)->VAR2, C -> VAR1);
+
+    print(VAR%FUNC);
+    ##vemos ademas el funcionamiento de lambda ##
+    B:= 3UI;
+    (uint G){print(G); G:=B; print(G);}(1UI)
+
+    
+}

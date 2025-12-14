@@ -1,0 +1,20 @@
+FUNCION{
+    uint A;
+    A:= 2UI;
+
+    uint FNORMAL (cv uint X) {
+        X:= 3UI;
+        return(X);
+    }
+    FNORMAL(A->X)
+
+    uint FIF (uint X){
+        if (X < 1UI)
+            X:= 4UI;
+        else
+            X:= 5UI;
+        endif;
+        return(X);
+    }
+    FIF(A->X)
+}

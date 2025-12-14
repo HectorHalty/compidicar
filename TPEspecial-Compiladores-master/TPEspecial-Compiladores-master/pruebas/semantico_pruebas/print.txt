@@ -1,0 +1,5 @@
+MAIN{
+
+    print(2UI);
+    print("Hola");
+}

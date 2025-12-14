@@ -1,0 +1,14 @@
+FALTAPARENTESISSELECCION{
+    uint A,B;
+    A:= 1UI;
+    B:= 2UI;
+
+    print("Falta de parentesis izq en condicion de SELECCION ");
+    if A < B ) {A:= B;} endif;
+
+    print("Falta de parentesis der en condicion de SELECCION ");
+    if ( A < B   {A:= B;} endif;
+
+    print("Falta de parentesis ambos en condicion de SELECCION ");
+    if  A < B   {A:= B;} endif;
+}

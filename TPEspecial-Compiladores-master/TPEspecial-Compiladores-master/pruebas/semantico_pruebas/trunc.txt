@@ -1,0 +1,7 @@
+MAIN{
+    uint Z, B;
+    uint F1(cv uint X){
+        return(X);
+    }
+    Z:= F1(trunc(1.2)->X);
+}

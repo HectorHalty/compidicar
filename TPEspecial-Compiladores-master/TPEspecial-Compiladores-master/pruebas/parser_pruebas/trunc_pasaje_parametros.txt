@@ -1,0 +1,3 @@
+TRUNC{
+    Z:= B + F1(trunc(1.2)->X);
+}

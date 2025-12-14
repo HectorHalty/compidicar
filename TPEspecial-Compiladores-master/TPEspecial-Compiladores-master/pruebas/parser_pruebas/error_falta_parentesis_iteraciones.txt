@@ -1,0 +1,13 @@
+FALTAPARENITERACIONES {
+    uint A,B;
+    A:= 1UI;
+    B:= 2UI;
+
+    do {A:= A+B;} while A < B ;
+
+    do {A:= A+B;} while (A < B ;
+
+    do {A:= A+B;} while A < B); 
+
+    do {A:= A+B;} while (A  B);
+}

@@ -1,0 +1,3 @@
+ENDIF{
+    if (A < B) then {A:=B;} ;
+}

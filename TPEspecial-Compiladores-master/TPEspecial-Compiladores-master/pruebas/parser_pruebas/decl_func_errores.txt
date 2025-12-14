@@ -1,0 +1,29 @@
+TODOSLOSERRORESENFUNCIONES{
+
+
+    print("Falta de , entre parametros formales");
+    uint F(cv uint A uint B) {
+        A:=B; 
+        return(A);
+    }
+
+    print("Falta de nombre en funcion");
+    uint (cv uint A, uint B) {
+        A:=B; 
+        return(A);
+    }
+
+    print("Falta de nombre de parametro formal en declaración de funcion.");
+     uint F(cv uint) {
+        A:=B; 
+        return(A);
+    }
+
+    print("Falta de tipo de parametro formal en declaración de funcion.");
+     uint F(cv  A) {
+        A:=B; 
+        return(A);
+    }
+
+
+}

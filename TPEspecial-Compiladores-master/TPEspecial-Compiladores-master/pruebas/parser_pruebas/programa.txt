@@ -1,0 +1,5 @@
+PROGRAMA {
+
+    print("Hola Catedra de Compiladores e Interpretes.");
+    
+}

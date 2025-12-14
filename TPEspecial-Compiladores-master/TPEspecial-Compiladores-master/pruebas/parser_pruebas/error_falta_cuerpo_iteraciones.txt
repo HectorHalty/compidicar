@@ -1,0 +1,4 @@
+CUERPOITERACIONES {
+
+    do while(A<B);
+}

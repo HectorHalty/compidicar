@@ -1,0 +1,7 @@
+COMPARADOR{
+
+    do {A:= A+B;} while (A  B);
+
+    if(C D) {C:= 2UI;} endif;
+    
+}

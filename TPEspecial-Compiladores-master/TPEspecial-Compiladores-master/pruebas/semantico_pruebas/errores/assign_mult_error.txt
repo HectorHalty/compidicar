@@ -1,0 +1,5 @@
+MAIN{
+    uint J,K, L, M;
+    J,K, L, M = 1UI , 23UI;
+    J = 20UI, 21UI;
+}

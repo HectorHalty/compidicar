@@ -1,0 +1,9 @@
+DELIMLAMBDA{
+
+    (uint A)A:=B;(4.4)
+
+    (uint A)A:=B;}(4.4)
+
+    (uint A){A:=B;(4.4)
+
+}

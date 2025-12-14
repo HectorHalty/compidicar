@@ -1,0 +1,12 @@
+MAIN {
+
+    uint A, B;
+    A:= 1UI;
+    B:= 2UI;
+    if(A < B) 
+        A:= B;
+    else
+        B:= A;
+    endif;
+    print(A);
+}

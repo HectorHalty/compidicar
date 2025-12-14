@@ -1,0 +1,55 @@
+PRUEBA%VALIDA {
+    ##
+    Este programa es complejo pero sintácticamente
+    y semánticamente correcto.
+    ##
+    
+    uint GLOBAL%A, GLOBAL%B, RESULTADO;
+    GLOBAL%A := 10UI;
+    GLOBAL%B := 2UI;
+
+    ## --- Declaracion de Funcion ---
+    CALCULA%POTENCIA: Calcula (VAL%BASE ^ VAL%EXP) usando un bucle
+    y almacena el numero de iteraciones en ITER%COUNT (pasado por ref).
+    ##
+    uint CALCULA%POTENCIA (uint ITER%COUNT, cv uint VAL%BASE, cv uint VAL%EXP) {
+        
+        uint FUNCION2(cv uint ITER%COUNT){
+            return (ITER%COUNT);
+        }
+
+        uint I, TEMP%RES;
+        I := 0UI;
+        TEMP%RES := 1UI;
+        
+        ## Bucle DO-WHILE para calcular la potencia ##
+        do {
+            if (I < VAL%EXP) {
+                TEMP%RES := TEMP%RES * VAL%BASE;
+            } endif;
+            
+            I := I + 1UI;
+            ITER%COUNT := I; ## Modifica el parametro por referencia ##
+            
+        } while (I < VAL%EXP);
+        
+        print("Calculo de potencia finalizado");
+        
+        ## Retorno de la funcion ##
+        return (TEMP%RES);
+    }
+    ## --- Fin de Funcion --- ##
+
+    print("Iniciando calculo...");
+    
+    ## Invocacion de la funcion. Probamos ademas el trunc dentro de ella##
+    RESULTADO := CALCULA%POTENCIA(trunc(20.0) -> VAL%EXP, GLOBAL%A -> ITER%COUNT, GLOBAL%B -> VAL%BASE);
+
+    print("--- Resultados ---");
+    print("Resultado Potencia (debe ser 32):");
+    print(RESULTADO);
+    
+    print("Iteraciones (debe ser 5):");
+    print(GLOBAL%A); ## GLOBAl%A fue modificado por la funcion ##
+
+}

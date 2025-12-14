@@ -1,0 +1,25 @@
+PREFIJADO%OPCIONAL{
+    uint B;
+    
+    uint AA(uint X){
+        uint A;
+
+        uint AAA(uint W){
+            uint X; 
+
+            X:= AA.A;
+
+            AAA.X := B;
+            return(X);
+        }
+        AAA(A->W)
+        return(A);
+    }
+    AAA(B->X) ## Se quiere llamar a una funcion fuera de alcance. ##
+    A:= 1UI; ## Se intenta utilizar una variable fuera de alcance.##
+    uint BB(uint Z){
+        uint A, W;
+        return(A);
+    }
+    BB(B->Z)
+}

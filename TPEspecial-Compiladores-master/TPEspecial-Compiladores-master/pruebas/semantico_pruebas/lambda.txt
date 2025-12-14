@@ -1,0 +1,6 @@
+LAMBDA{
+    uint B;
+    B:= 3UI;
+    (uint A){print(A); A:=B; print(A);}(1UI)
+
+}

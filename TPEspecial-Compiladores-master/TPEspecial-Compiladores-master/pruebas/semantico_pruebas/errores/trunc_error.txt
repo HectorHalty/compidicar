@@ -1,0 +1,12 @@
+FUNC{
+    ##errores por tipos de incompatibilidades##
+    uint A;
+    uint X;
+    uint Z;
+    uint F1(cv uint A, cv uint B){
+        uint Z;
+        return (Z);
+    }
+    F1(trunc(2.0)->A, 20UI->B)
+    F1 (2.0->A, 20UI->B)
+}

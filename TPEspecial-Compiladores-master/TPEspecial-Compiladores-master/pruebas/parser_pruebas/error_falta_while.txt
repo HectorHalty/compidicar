@@ -1,0 +1,6 @@
+WHILE {
+    uint A,B;
+    A:= 1UI;
+    B:= 2UI;
+    do {A:= 1UI + 1UI;} (A < B);
+}

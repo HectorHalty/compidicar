@@ -1,0 +1,5 @@
+OPERADOR{
+    A = 2UI 1UI 3UI, 4UI 5UI;
+
+    B = 1.2 3.2
+}
